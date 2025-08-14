@@ -12,7 +12,7 @@
 rel="stylesheet">
  </head>
   <body class="overflow-x-hidden font-Outfit leading-8 dark:bg-darkTheme dark:text-white">
-    <div class="fixed  top-0 right-0 w-11/12 -z-10 translate-y-[80%] 
+    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[80%] 
     dark:hidden">
       <img src="Images/bgcolor.jpeg" alt="" class="w-full">
     </div>
@@ -80,7 +80,7 @@ rel="stylesheet">
         alt="" class="w-5"></a>
         <a href="#contact"
           class="px-10 py-3 border rounded-full border-gray-500 flex items-center
-           gap-2 bg-white dark:text-black">my resume<img src="./Images/"
+            gap-2 bg-white dark:text-black">my resume<img src="./Images/"
         alt="" class="w-4"></a>
         </div>
     </div>
@@ -258,27 +258,28 @@ rel="stylesheet">
       <h2 class="text-center text-5xl font-Ovo">Get in Touch</h2>
       <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo"> contact Connecting me in the portfolio website</p>
         
-     <form action="https://formspree.io/f/your_form_id" method="POST" class="max-w-2xl mx-auto">
-  <div class="grid grid-cols-1 gap-6 mt-10 mb-8">
-    <input type="text" name="name" placeholder="Enter Your Name"
-      class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90"
-      required>
+      <form name="contact" method="POST" data-netlify="true" class="max-w-2xl mx-auto">
+        <input type="hidden" name="form-name" value="contact" />
+        <div class="grid grid-cols-1 gap-6 mt-10 mb-8">
+          <input type="text" name="name" placeholder="Enter Your Name"
+            class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90"
+            required>
 
-    <input type="email" name="email" placeholder="Enter Your Email"
-      class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90"
-      required>
-  </div>
+          <input type="email" name="email" placeholder="Enter Your Email"
+            class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90"
+            required>
+        </div>
 
-  <textarea name="message" rows="6" placeholder="Enter Your Message"
-    class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-darkHover/30 dark:border-white/90"
-    required></textarea>
+        <textarea name="message" rows="6" placeholder="Enter Your Message"
+          class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-darkHover/30 dark:border-white/90"
+          required></textarea>
 
-  <button type="submit"
-    class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover">
-    Submit now
-    <img src="./Images/arrow.png" alt="" class="w-5">
-  </button>
-</form>
+        <button type="submit"
+          class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover">
+          Submit now
+          <img src="./Images/arrow.png" alt="" class="w-5">
+        </button>
+      </form>
 
       </div>
       <div class="mt-20">

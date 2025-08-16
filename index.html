@@ -8,8 +8,8 @@
     <script src="./tailwind.config.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" 
-    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body class="overflow-x-hidden font-Outfit leading-8 dark:bg-darkTheme dark:text-white">
     <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[80%] dark:hidden">
@@ -26,17 +26,19 @@
         <li><a href="#contact">Contact me</a></li>
       </ul>
       <div class="flex items-center gap-4">
-      <button onclick="toggleTheme()">
-        <img src="Images/moon.png" alt="" class="w-5 dark:hidden">
-        <img src="Images/sun (1).png" alt="" class="w-5 hidden dark:block"></button>
+        <button onclick="toggleTheme()">
+          <img src="Images/moon.png" alt="" class="w-5 dark:hidden">
+          <img src="Images/sun (1).png" alt="" class="w-5 hidden dark:block">
+        </button>
         <a href="#contact" class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50">
           Contact 
           <img src="Images/arrow.jpeg" alt="" class="w-3 dark:hidden">
-          <img src="Images/arrow.png" alt="" class="w-10 hidden dark:block "></a>
-          <button class="block md:hidden ml-3" onclick="openMenu()">
-            <img src="Images/menu_icon.jpeg" alt="" class="w-6 dark:hidden">
-            <img src="Images/main-menu.png" alt="" class="w-6 hidden dark:block">
-          </button>
+          <img src="Images/arrow.png" alt="" class="w-10 hidden dark:block">
+        </a>
+        <button class="block md:hidden ml-3" onclick="openMenu()">
+          <img src="Images/menu_icon.jpeg" alt="" class="w-6 dark:hidden">
+          <img src="Images/main-menu.png" alt="" class="w-6 hidden dark:block">
+        </button>
       </div>
       <ul id="sideMenu" class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 s-50 h-screen bg-rose-50 tramsition duration-500 font-Ovo dark:bg-[#2a004a] dark:text-white">
         <div class="absolute right-6 top-6" onclick="closeMenu()">
@@ -57,14 +59,14 @@
       </h3>
       <h1 class="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">Aspiring Frontend web developer.</h1>
       <p class="max-w-2xl mx-auto font-Ovo">I am a Aspiring frontend Developer learning the web development skills. I want to work with my skills and learn the new things.</p>
-        <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
-          <a href="#contact" class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2 dark:border-transparent">
-            contact me <img src="Images/arrow.png" alt="" class="w-5">
-          </a>
+      <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+        <a href="#contact" class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2 dark:border-transparent">
+          Contact me <img src="Images/arrow.png" alt="" class="w-5">
+        </a>
         <a href="#contact" class="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black">
           my resume<img src="Images/file.png" alt="" class="w-4">
         </a>
-        </div>
+      </div>
     </div>
     <div id="about" class="w-full px-[12%] py-10 scroll-mt-20">
       <h4 class="text-center mb-2 text-lg font-Ovo">Introduction</h4>
@@ -107,8 +109,8 @@
             <img src="Images/css-3.png" alt="" class="w-5 sm:w-7">
           </li>
         </ul>
-        </div>
       </div>
+    </div>
     </div>
     <div id="Qualification" class="w-full px-[12%] py-10 scroll-mt-20">
       <h4 class="text-centermb-2 text-lg font-Ovo">Qualification Journey</h4>
@@ -194,7 +196,7 @@
       <h4 class="text-center mb-2 text-lg font-Ovo">Contact me</h4>
       <h2 class="text-center text-5xl font-Ovo">Get in Touch</h2>
       <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo"> contact Connecting me in the portfolio website</p>
-      <form name="contact" method="POST" action="/success" data-netlify="true" netlify-honeypot="bot-field" class="max-w-2xl mx-auto">
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="max-w-2xl mx-auto">
         <input type="hidden" name="form-name" value="contact" />
         <p class="hidden">
           <label>
